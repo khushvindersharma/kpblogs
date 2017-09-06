@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FirebaseApplication</string>
+    <string name="android_google_client_id">895860349140-kcitddop2439kssni94gjhi64dpcuak2.apps.googleusercontent.com</string>
+    <string name="web_google_client_id">895860349140-8bjg2m1gj3cv3deakjpclegd7807vqt6.apps.googleusercontent.com</string>
+</resources>
