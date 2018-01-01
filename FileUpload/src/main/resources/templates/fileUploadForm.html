@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <title>Spring Boot - ANGULARJS UPLOAD FILES Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="/FileUpload/css/lib/bootstrap.min.css"></link>
+	<script src="/FileUpload/js/lib/angular.min.js"></script>
+</head>
+
+<body class="container" ng-app="fileUploadApp">
+
+	<div  ng-controller="fileUploadController">
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="uploadfile">Upload File:</label>
+				<div class="col-sm-5">
+					<input class="form-control" type="file" file-model = "uploadedFile" placeholder="Upload File"></input>
+				</div>
+			</div>
+			<div class="form-group"> 
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-default" ng-click = "doUploadFile()">Upload</button>
+			    </div>
+			</div>
+		</form>
+		<hr/>
+		<div class="col-sm-offset-2">
+			<p ng-bind="uploadResult"></p>
+		</div>
+	</div>
+	
+	
+	
+	<script src="/FileUpload/js/fileUploadApp.js"></script>
+	<script src="/FileUpload/js/fileUploadController.js"></script>
+	
+	<!-- jQuery library -->
+	<script src="/FileUpload/js/lib/jquery.min.js"></script>
+	<script src="/FileUpload/js/lib/bootstrap.min.js"></script>
+
+</body>
+</html>
